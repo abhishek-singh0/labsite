@@ -1,1 +1,11 @@
-.sqlite3
+media/
+.vscode/
+*.pyc
+gene_data*
+*.db
+*.sqlite3
+prediction2/
+static
+Pipfile
+Pipfile.lock
+.venv
