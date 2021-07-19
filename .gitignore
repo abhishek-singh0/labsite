@@ -5,7 +5,7 @@ gene_data*
 *.db
 *.sqlite3
 prediction2/
-static
+# static
 Pipfile
 Pipfile.lock
 .venv
