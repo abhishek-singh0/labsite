@@ -5,8 +5,9 @@ gene_data*
 *.db
 *.sqlite3
 prediction2/
-static
+# static
 Pipfile
 Pipfile.lock
 .venv
 .DS_Store
+*/__pycache__/

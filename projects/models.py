@@ -17,8 +17,8 @@ class Assignment(TimeStampedModel):
         PENDING="Pending"   
         BACKLOG="Backlog"
 
-    user=models.ForeignKey(User,on_delete=models.PROTECT)
-    project=models.ForeignKey(Project,on_delete=models.PROTECT) #need to verify this
+    user=models.ForeignKey(User,on_delete=models.PROTECT,related_name='assignments') #related name can be used to reference relation of assignments with the user eg:user.assignments.add(a1,a2,a3...), user.assignments.all()
+    project=models.ForeignKey(Project,on_delete=models.PROTECT, related_name='assignments') #need to verify this
     title=models.CharField(max_length=50)
     description=models.CharField(max_length=1000,blank=True)
     status=models.CharField(max_length=20,default=Status.PENDING,choices=Status.choices)
@@ -28,8 +28,8 @@ class Assignment(TimeStampedModel):
         return self.title
 
 class Comment(TimeStampedModel):
-    assignment=models.ForeignKey(Assignment,on_delete=models.PROTECT)
-    user=models.ForeignKey(User,on_delete=models.PROTECT)
+    assignment=models.ForeignKey(Assignment,on_delete=models.PROTECT,related_name='comments')
+    user=models.ForeignKey(User,on_delete=models.PROTECT,related_name='comments')
     body=models.CharField(max_length=150,blank=True)            
 
 
