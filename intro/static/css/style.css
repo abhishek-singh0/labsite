@@ -122,3 +122,7 @@ body{
   line-height: 50px;
   text-align: center;
 }
+
+#logout{
+  bottom:0;
+}
