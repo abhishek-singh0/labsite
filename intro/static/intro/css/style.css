@@ -67,7 +67,11 @@ body{
   line-height: 50px;
   transform: translateX(-50%);
 }
-
+.sidebar #btn:hover{
+  color: #000;
+  background: #fff;
+  border-radius: 6px;
+}
 .sidebar.active #btn{
   left:90%;
 }
@@ -84,12 +88,13 @@ body{
   margin: 0 5px;
 }
 
+/* tooltip CSS */
 .sidebar ul li .tooltip{
   position: absolute;
   color: #000;;
   left: 120px;
   top:0;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   border-radius: 6px;
   height: 35px;
   width:120px;
@@ -100,6 +105,11 @@ body{
   transition: 0s;
   opacity: 0;
   pointer-events: none;
+  display: block;
+}
+
+.sidebar.active ul li .tooltip{
+  display: none;
 }
 
 .sidebar ul li:hover .tooltip{
@@ -128,8 +138,15 @@ body{
   z-index: 99;
   color: #fff;
   font-size: 22px;
+  margin:15px;
+  transition:all 0.5s ease;
 }
 
+.sidebar ul li .bx-search:hover{
+  background: #fff;
+  color: #000;
+
+}
 .sidebar ul li{
   color: #fff;
   display: flex;
@@ -143,7 +160,6 @@ body{
 
 
 .sidebar ul li a{
-  width: 100%;
   color: #fff;
   display: flex;
   align-items: center;
@@ -151,6 +167,7 @@ body{
   line-height:50px ;
   transition: all 0.4s ease;
   border-radius: 12px; 
+  white-space: nowrap;
 }
 
 .sidebar ul li a:hover{
@@ -165,6 +182,19 @@ body{
   line-height: 50px;
   text-align: center;
 }
+
+/* to make the links appear on active */
+.sidebar .links_name{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar.active .links_name{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
 /* for the logout icon */
 /* .logout {
   position: absolute!important;
