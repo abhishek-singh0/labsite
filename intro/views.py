@@ -4,7 +4,7 @@ from django.shortcuts import render
 <<<<<<< HEAD
 
 
-# Some Dummy Changes
+# Some more  Dummy Changes
 =======
 def index(request):
     return render(request, 'intro/home.html')
