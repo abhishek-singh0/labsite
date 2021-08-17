@@ -5,6 +5,7 @@ from django.shortcuts import render
 
 
 # Some more  Dummy Changes
+# Some changes for pull request
 =======
 def index(request):
     return render(request, 'intro/home.html')
