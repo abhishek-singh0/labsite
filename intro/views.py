@@ -1,12 +1,10 @@
 from django.shortcuts import render
 
 # Create your views here.
-<<<<<<< HEAD
 
+def dashboard(request):
+    return render(request, 'intro/dashboard.html')
 
-# Some more  Dummy Changes
-# Some changes for pull request
-=======
 def index(request):
-    return render(request, 'intro/home.html')
->>>>>>> ecd32d54c3773f8312cd5181c49bb0558a7c3a17
+    return render(request, 'intro/index.html')
+

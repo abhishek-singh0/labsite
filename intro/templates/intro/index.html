@@ -1,3 +1,4 @@
+{% extends 'intro/base.html' %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +22,7 @@
         <script src="{% static 'intro/js/index/jquery.js' %}"></script>
     </head>
     <body>
-        <div id="page-container">
+        {% comment %} <div id="page-container">
             <div id="page-content">
                 <header id="main-header">
                     <div class="brand container">
@@ -35,7 +36,7 @@
                                 <span class="heading">Lab Management</span>
                             </div>
                         </div>    
-                    </div>
+                    </div> {% endcomment %}
                     <!-- <div class="container">
                         <div class="row">
                             <div class="col-sm-1">
@@ -49,7 +50,7 @@
                         </div>
                     </div> -->
 
-                    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+                    {% comment %} <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
                         <div class="container">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -85,10 +86,10 @@
                         </div>
                     </nav>
                 </header>
-                <div>
+                <div> {% endcomment %}
                     
-                    
-	{% comment %} <section id="showcase">
+    {% block content %}
+<section id="showcase">
 		<div class="jumbotron jumbotron-fluid">
 			<div class="container">
 				<div id="patient-registration-banner">
@@ -102,10 +103,9 @@
 				</div>
 			</div>
 		</div>
-	</section> {% endcomment %}
+	</section>
 
-	{% comment %} 
-    <div class="container">
+	<div class="container">
 		<section id="main">
 			<h1 class="heading">The Project</h1>
 			<p class="paragraph">
@@ -118,19 +118,20 @@
 			for Risk Assessment of Osteoporosis".
 			</p>
 		</section>
-	</div> 
-    {% endcomment %}
-    {% block content %}
-    {% endblock %}
+	</div>
+{% endblock %}
+	
 
+                {% comment %} 
         </div>
             </div>
+
             <footer id="main-footer">
                 <div class="container">
                     <span>Copyright &copy; 2021 UDSC</span>
                 </div>
             </footer>
-        </div>
+        </div> {% endcomment %}
             
 
         

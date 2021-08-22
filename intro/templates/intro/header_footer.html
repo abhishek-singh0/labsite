@@ -13,12 +13,12 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/css/mdb.min.css" rel="stylesheet">
         <!--===================================Style Sheet===================================================-->
         <link rel="stylesheet" type="text/css" href="{% static 'intro/css/index/style.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'intro/css/index/cards.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'intro/css/index/label.css' %}">
+        <link rel="stylesheet" type="text/css" href="./cards.css">
+        <link rel="stylesheet" type="text/css" href="./label.css">
         <!--=================================End Style Sheet=================================================-->
         <!--fonts-->
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto&display=swap" rel="stylesheet"> 
-        <script src="{% static 'intro/js/index/jquery.js' %}"></script>
+        <script src="./jquery.js"></script>
     </head>
     <body>
         <div id="page-container">
@@ -88,7 +88,7 @@
                 <div>
                     
                     
-	{% comment %} <section id="showcase">
+	<section id="showcase">
 		<div class="jumbotron jumbotron-fluid">
 			<div class="container">
 				<div id="patient-registration-banner">
@@ -102,10 +102,9 @@
 				</div>
 			</div>
 		</div>
-	</section> {% endcomment %}
+	</section>
 
-	{% comment %} 
-    <div class="container">
+	<div class="container">
 		<section id="main">
 			<h1 class="heading">The Project</h1>
 			<p class="paragraph">
@@ -118,13 +117,11 @@
 			for Risk Assessment of Osteoporosis".
 			</p>
 		</section>
-	</div> 
-    {% endcomment %}
-    {% block content %}
-    {% endblock %}
+	</div>
 
-        </div>
+                </div>
             </div>
+
             <footer id="main-footer">
                 <div class="container">
                     <span>Copyright &copy; 2021 UDSC</span>
