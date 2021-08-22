@@ -8,3 +8,8 @@ def dashboard(request):
 def index(request):
     return render(request, 'intro/index.html')
 
+def signUp(request):
+    return render(request, 'intro/signUp.html')
+
+def login(request):
+    return render(request, 'intro/login.html')
