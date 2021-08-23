@@ -6,15 +6,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>Osteoporosis AI Project</title>
+        <title>Lab Management</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Material Design for Bootstrap -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/css/mdb.min.css" rel="stylesheet">
         <!--===================================Style Sheet===================================================-->
-        <link rel="stylesheet" type="text/css" href="{% static 'intro/css/index/style.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'intro/css/index/cards.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'intro/css/index/label.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'intro/css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'intro/css/cards.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'intro/css/label.css' %}">
         <!--=================================End Style Sheet=================================================-->
         <!--fonts-->
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto&display=swap" rel="stylesheet"> 
@@ -27,27 +27,31 @@
                     <div class="brand container">
                         <div class="row">
                             <div class="col-sm-1">
-                                <a href="https://bioheaven360.com/" target="_blank">
+                                <a href="#" target="_blank">
                                     <!-- <img src="/osteoporosis-static/images/vajra.jpg"> -->
+                                </a>
+                            </div>
+                            <!-- <div id="site-title" class="col-sm-4">
+                                <span class="heading">Lab Management</span>
+                            </div> -->
+                        </div>    
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <a href="#" target="_blank">
+                                    <img src="{% static 'intro/img/logo.png' %}" height='70' >
                                 </a>
                             </div>
                             <div id="site-title" class="col-sm-4">
                                 <span class="heading">Lab Management</span>
                             </div>
-                        </div>    
-                    </div>
-                    <!-- <div class="container">
-                        <div class="row">
-                            <div class="col-sm-1">
-                                <a href="https://bioheaven360.com/" target="_blank">
-                                    <img src="/osteoporosis-static/images/vajra.jpg">
-                                </a>
-                            </div>
+                            {% comment %} 
                             <div class="col-sm-3">
                                 <small>Venture in Artificial Intelligence Jig for Risk Assessment of Osteoporosis</small>
-                            </div>
+                            </div> {% endcomment %}
                         </div>
-                    </div> -->
+                    </div>
 
                     <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
                         <div class="container">
@@ -56,7 +60,9 @@
                             </button>
                             <div id="navbarSupportedContent" class="collapse navbar-collapse">
                                 <ul class ="navbar-nav mr-auto">
-                                    <li class="nav-item"><a class="nav-link" href="/osteoporosis/home.html">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">About Lab</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             About Us
@@ -68,17 +74,14 @@
                                             <a class="dropdown-item" href="#">Contact Us</a>
                                         </div>
                                     </li>
-                                    <li class="nav-item"><a class="nav-link" href="#">About Osteoporosis</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
-                                    
 
                                 </ul>
                                 <ul class="navbar-nav ml-auto">
                                     
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/osteoporosis/register/">Register</a></li>
+                                        <a class="nav-link" href="/signup/">Register</a></li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/osteoporosis/login/">Login</a></li>
+                                        <a class="nav-link" href="/login/">Login</a></li>
                                     
                                 </ul>
                             </div>

@@ -11,7 +11,8 @@ color:
 
 .heading{
 	font-family: 'Fira Sans', sans-serif;
-	color: #000;
+	/* color: #000; */
+	color: black;
 	font-weight: 500;
 	font-size: 1.5em;
 }
@@ -37,8 +38,10 @@ body{
 }
 
 #main-header{
-	background-color:#1e56a0;
-	color:#f6f6f6;
+	/* background-color:#1e56a0,#00AF91; */
+	background-color: #4b2e83;
+	/* color:#f6f6f6; */
+	color:black;
 	font-weight: bold;
 	font-family: 'Fira Sans', sans-serif;
 }
@@ -48,7 +51,8 @@ body{
 }
 
 #navbar{
-	background-color:#163172;
+	/* background-color:#163172; */
+	background-color:#3E1E68;
 	color:#d6e4f0;
 	padding-left:0px;
 }
@@ -72,7 +76,7 @@ body{
 }
 
 #showcase{
-	background-image:url('./media/cover_image.jpg');
+	/* background-image:url('../img/cover_image.jpg'); */
 	background-position: center right;
 	background-repeat: no-repeat;
 	min-height:15em;
@@ -89,7 +93,8 @@ body{
 #main-footer {
 	display:flex;
 	width:100%;
-	background: #1e56a0;
+	/* background: #1e56a0; */
+	background: #3E1E68;
 	color: #f6f6f6;
 	height: 2.5rem;
 	position:absolute;
@@ -138,7 +143,9 @@ dl, ol, ul {
 	background-color: transparent;
 	color: white;
 	margin-bottom: 0em;
-	background-image: linear-gradient(90deg,#163172 -25%, rgba(16, 31, 72, 0.507) 60%, rgba(16, 31, 72, 0.068)),linear-gradient(0deg,#163172,transparent 0.1%);
+	/* background-image: linear-gradient(90deg,#163172 -25%, rgba(16, 31, 72, 0.507) 60%, rgba(16, 31, 72, 0.068)),linear-gradient(0deg,#163172,transparent 0.1%); */
+	background-image: linear-gradient(90deg,#3E1E68 -25%, rgba(126, 31, 214, 0.507) 60%, rgba(16, 31, 72, 0.068)),linear-gradient(0deg,#163172,transparent 0.1%);
+
 }
 
 #patient-registration-banner {
