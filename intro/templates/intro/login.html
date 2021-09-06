@@ -4,43 +4,85 @@
 
 {% block content %}
 <div class="wrapper">    
-    <!doctype html>
+
+
+    <!DOCTYPE html>
     <html lang="en">
-      <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+        <head>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-        <title>Signin Template for Bootstrap</title>
+            <title>Osteoporosis AI Project</title>
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <!-- Material Design for Bootstrap -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/css/mdb.min.css" rel="stylesheet">
+            <!--css-->
+            <link rel="stylesheet" type="text/css" href="/osteoporosis-static/css/style.css">
+            <link rel="stylesheet" type="text/css" href="/osteoporosis-static/css/cards.css">
+            <link rel="stylesheet" type="text/css" href="/osteoporosis-static/css/label.css">
+            <!--fonts-->
+            <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto&display=swap" rel="stylesheet"> 
+            <script src="/osteoporosis-static/admin/js/vendor/jquery/jquery.js"></script>
+        </head>
+        <body>          
+
+        <div class="container">
+            <section id="main">
+                <form method="POST">
+                    {% csrf_token %}
+                    <fieldset class="form-group col-sm-6">
+                    <legend class="heading border-bottom mb-4">Log In</legend>
+                        
     
-        <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+    <div id="div_id_username" class="form-group"> <label for="id_username" class=" requiredField">
+                    Username<span class="asteriskField">*</span> </label> <div class=""> <input type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="150" class="textinput textInput form-control" required id="id_username"> </div> </div> <div id="div_id_password" class="form-group"> <label for="id_password" class=" requiredField">
+                    Password<span class="asteriskField">*</span> </label> <div class=""> <input type="password" name="password" autocomplete="current-password" class="textinput textInput form-control" required id="id_password"> </div> </div>
     
-        <!-- Bootstrap core CSS -->
-        <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+                    </fieldset>
+                    <div class="form-group">
+                        <button class="ml-3 btn btn-outline-info" type="submit">LogIn</button>
+                    </div>
+                </form>
+                <div>
+                    <p>
+                        <small class="ml-3">Forgot Password?
+                            <a href="/osteoporosis/password-reset/">Reset Now</a> 
+                        </small>
+                    <br>
+                        <small class="ml-3">Don't have an account?
+                            <a href="/osteoporosis/register/">Register Now</a>                  
+                        </small>
+                        <small class="ml-3">Resend account activation link?
+                            <a href="/osteoporosis/resend-activation-link/">Resend Link</a>                  
+                        </small>
+                    </p>
+                </div>
+            </section>
+        </div>
     
-        <!-- Custom styles for this template -->
-        <link href="{% static 'intro/css/sign.css' %}" rel="stylesheet">
-      </head>
+                    </div>
+                </div>
     
-      <body class="text-center">
-        <form class="form-signin">
-          <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-          <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-          <label for="inputEmail" class="sr-only">Email address</label>
-          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-          <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-          <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
-          </div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-         
-        </form>
-      </body>
+                <footer id="main-footer">
+                    <div class="container">
+                        <span>Copyright &copy; 2021 UDSC</span>
+                    </div>
+                </footer>
+            </div>
+                
+    
+            
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <!-- Material Design for Bootstrap -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/js/mdb.min.js"></script>
+        </body>
     </html>
+    
 </div>
 {% endblock %}

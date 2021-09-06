@@ -60,8 +60,8 @@
                             </button>
                             <div id="navbarSupportedContent" class="collapse navbar-collapse">
                                 <ul class ="navbar-nav mr-auto">
-                                    <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="aboutlab">About Lab</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{% url 'aboutLab' %}">About Lab</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -79,9 +79,9 @@
                                 <ul class="navbar-nav ml-auto">
                                     
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/signup/">Register</a></li>
+                                        <a class="nav-link" href="{% url 'signup' %}">Register</a></li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/login/">Login</a></li>
+                                        <a class="nav-link" href="{% url 'login' %}">Login</a></li>
                                     
                                 </ul>
                             </div>
