@@ -13,3 +13,7 @@ def signUp(request):
 
 def login(request):
     return render(request, 'intro/login.html')
+
+
+def aboutlab(request):
+    return render(request, 'intro/about_lab.html')
